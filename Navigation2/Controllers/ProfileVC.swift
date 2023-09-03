@@ -59,9 +59,11 @@ class ProfileVC: UIViewController {
         navigationItem.title = "Profile"
         navigationItem.titleView?.tintColor = .white
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logOut))
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(tapLogOut))
         navigationItem.rightBarButtonItem?.tintColor = .white
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "My Location", style: .plain, target: self, action: #selector(tapLocation))
+        navigationItem.leftBarButtonItem?.tintColor = .white
         
         
         postsTable.delegate = self
@@ -82,11 +84,15 @@ class ProfileVC: UIViewController {
         postsTable.addGestureRecognizer(gestureDoubleTap)
     }
     
-    @objc func logOut() {
+    @objc func tapLogOut() {
         AuthManager.shared.logOut()
         let loginVC = LoginVC(viewModel: LogModel())
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: true)
+    }
+    
+    @objc func tapLocation() {
+        navigationController?.pushViewController(LocationVC(), animated: true)
     }
 
     

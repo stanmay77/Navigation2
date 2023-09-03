@@ -32,12 +32,15 @@ class TabVC: UITabBarController {
         view.backgroundColor = .systemBackground
         
         
-        UITabBar.appearance().backgroundColor = UIColor(red: 53.0, green: 144.0, blue: 243.0, alpha: 0.6)
+       // UITabBar.appearance().backgroundColor = UIColor(red: 53.0, green: 144.0, blue: 243.0, alpha: 0.6)
         
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithOpaqueBackground()
         navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-               
+        navigationBarAppearance.backButtonAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        let image = UIImage(systemName: "chevron.backward")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        navigationBarAppearance.setBackIndicatorImage(image, transitionMaskImage: image)
+    
         navigationBarAppearance.shadowColor = nil
         navigationBarAppearance.backgroundColor = UIColor(named: "AccentColor")
         UINavigationBar.appearance().barStyle = .default
