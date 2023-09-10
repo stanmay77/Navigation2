@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		330973F32A9FB0C9000C1939 /* CoreDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330973F22A9FB0C9000C1939 /* CoreDManager.swift */; };
+		330ED9662AA62DE900E5AF1A /* MapTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330ED9652AA62DE900E5AF1A /* MapTypeViewController.swift */; };
+		330ED9682AA630FF00E5AF1A /* MapTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330ED9672AA630FF00E5AF1A /* MapTypeCollectionViewCell.swift */; };
 		3328035A2A9F5AD600A746B1 /* CloudStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332803592A9F5AD600A746B1 /* CloudStorageManager.swift */; };
 		334BF17A2A8E69DD003C5E65 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BF1792A8E69DD003C5E65 /* LoginVC.swift */; };
 		334BF17D2A8E712E003C5E65 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BF17C2A8E712E003C5E65 /* Extensions.swift */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		330973F22A9FB0C9000C1939 /* CoreDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDManager.swift; sourceTree = "<group>"; };
+		330ED9652AA62DE900E5AF1A /* MapTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeViewController.swift; sourceTree = "<group>"; };
+		330ED9672AA630FF00E5AF1A /* MapTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		332803592A9F5AD600A746B1 /* CloudStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageManager.swift; sourceTree = "<group>"; };
 		334BF1792A8E69DD003C5E65 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		334BF17C2A8E712E003C5E65 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			children = (
 				334BF1792A8E69DD003C5E65 /* LoginVC.swift */,
 				33FC38792A936E5300E99E95 /* LoginViewModel.swift */,
+				330ED9652AA62DE900E5AF1A /* MapTypeViewController.swift */,
 				3395E8F22A9F5ECF00938F6B /* TabVC.swift */,
 				3395E8F42A9F5F0500938F6B /* ProfileVC.swift */,
 				3395E8F62A9F5F3100938F6B /* FavVC.swift */,
@@ -129,6 +134,7 @@
 				3395E8F82A9F76AE00938F6B /* ProfileHeaderView.swift */,
 				3395E9032A9F77FA00938F6B /* PhotosTableViewCell.swift */,
 				3395E9052A9F781A00938F6B /* PhotosCollectionViewCell.swift */,
+				330ED9672AA630FF00E5AF1A /* MapTypeCollectionViewCell.swift */,
 				3395E9072A9F784500938F6B /* PhotoImageView.swift */,
 			);
 			path = Views;
@@ -285,6 +291,7 @@
 				3395E9082A9F784500938F6B /* PhotoImageView.swift in Sources */,
 				3395E90E2A9F7A6400938F6B /* Photo.swift in Sources */,
 				3328035A2A9F5AD600A746B1 /* CloudStorageManager.swift in Sources */,
+				330ED9682AA630FF00E5AF1A /* MapTypeCollectionViewCell.swift in Sources */,
 				334BF1842A8E7DE1003C5E65 /* Divider.swift in Sources */,
 				3395E9002A9F775500938F6B /* PostTableViewCell.swift in Sources */,
 				334BF1862A8E818A003C5E65 /* CustomButton.swift in Sources */,
@@ -295,6 +302,7 @@
 				334BF17A2A8E69DD003C5E65 /* LoginVC.swift in Sources */,
 				3395E8F92A9F76AE00938F6B /* ProfileHeaderView.swift in Sources */,
 				33C844392AA303C300760167 /* LocationVC.swift in Sources */,
+				330ED9662AA62DE900E5AF1A /* MapTypeViewController.swift in Sources */,
 				3395E9042A9F77FA00938F6B /* PhotosTableViewCell.swift in Sources */,
 				3395E9022A9F77B700938F6B /* Constants.swift in Sources */,
 				33FC387A2A936E5300E99E95 /* LoginViewModel.swift in Sources */,

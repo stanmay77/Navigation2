@@ -14,7 +14,7 @@ final class PhotosCollectionViewCell: UICollectionViewCell {
     }
     
     
-    func configureUI(for photo: UIImage) {
+    public func configureUI(for photo: UIImage) {
         
       //  let photoView = PhotoImageView(frame: .zero, photo: photo)
         let photoView = PhotoImageView(frame: .zero, photo: photo)
