@@ -7,7 +7,7 @@ final class ProfileHeaderView: UIView {
     lazy var setStatusButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.backgroundColor = .systemBlue
-        button.setTitle("Show status", for: .normal)
+        button.setTitle(NSLocalizedString("statusButtonTitle", comment: ""), for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         button.layer.cornerRadius = 4.0
@@ -62,7 +62,7 @@ final class ProfileHeaderView: UIView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.backgroundColor = .white
         textField.addSpacer(for: 10)
-        textField.placeholder = "Enter status..."
+        textField.placeholder = NSLocalizedString("statusTextFieldPlaceholder", comment: "")
         return textField
     }()
     
@@ -119,7 +119,7 @@ final class ProfileHeaderView: UIView {
     }
       
     @objc func tapImage() {
-        print("img tapped")
+
     }
     
     }

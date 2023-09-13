@@ -1,0 +1,70 @@
+"authInvalidPassword" = "Wrong password entered";
+"emailBadlyFormatted" = "Login not in email format";
+"authUserNotRegistered" = "User not registered. Pls sign up";
+"authOtherError" = "Other error. Pls relogin";
+"signUpEmailBadlyFormatted" = "Login not in email format";
+"signUpUserAlreadyExists" = "User already exists";
+"otherSignUpError" = "Other error. Pls try again later";
+"passwordLengthIncorrect" = "Password must be 6 characters long or more";
+"statusButtonTitle" = "Show status";
+"statusTextFieldPlaceholder" = "Enter status...";
+"photosLabel" = "Photos";
+"standardMapType" = "Standard";
+"satelliteMapType" = "Satellite";
+"loginTextFieldPlaceholder" = "Email";
+"passwordTextFieldPlaceholder" = "Password";
+"signUpLabel" = "Sign Up";
+"loginButtonTitle" = "Log In";
+"errorAlertTitle" = "Error";
+"errorAlertAction" = "Try again";
+"tab1Title" = "My Profile";
+"tab2Title" = "Favorites";
+"ProfileVCTitle" = "Profile";
+"LogOutButtonTitle" = "Log out";
+"LocationButtonTitle" = "My Location";
+"favoritePostsVCTitle" = "Favorite Posts";
+"confirmPasswordSignUpPlaceholder" = "Confirm Password";
+"yourNameSignUpPlaceholder" = "Your Name";
+"yourStatusSignUpPlaceholder" = "Your status";
+"signUpLabelText" = "Please enter your email, password to sign up in the service. Confirm password by entering it once more.";
+"profileLabelText" = "Please tell us about yourself";
+"passwordConfirmationLabelText" = "Passwords must match!";
+"successAlertTitle" = "Success";
+"userRegisteredAlertText" = "User registered successfully!";
+"okAlertButtonTitle" = "Ok";
+"locationServicesAlertText" = "Location services not enabled or restricted!";
+"addAnnotationAlertText" = "Add annotation";
+"enterPOIAlertText" = "Enter your POI name";
+"addAlertAction" = "Add";
+"cancelAlertButtonText" = "Cancel";
+"distanceOverlayText" = "Distance";
+"kmLabel" = "km";
+"uploadPhotoButtonLabel" = "Upload your photo";
+"likesLabel" = "Likes";
+"viewsLabel" = "Views";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

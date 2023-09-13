@@ -56,13 +56,13 @@ class ProfileVC: UIViewController {
 
     func configureUI() {
         view.backgroundColor = .systemBackground
-        navigationItem.title = "Profile"
+        navigationItem.title = NSLocalizedString("ProfileVCTitle", comment: "")
         navigationItem.titleView?.tintColor = .white
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(tapLogOut))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("LogOutButtonTitle", comment: ""), style: .plain, target: self, action: #selector(tapLogOut))
         navigationItem.rightBarButtonItem?.tintColor = .white
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "My Location", style: .plain, target: self, action: #selector(tapLocation))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("LocationButtonTitle", comment: ""), style: .plain, target: self, action: #selector(tapLocation))
         navigationItem.leftBarButtonItem?.tintColor = .white
         
         

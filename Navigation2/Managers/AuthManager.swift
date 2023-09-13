@@ -2,19 +2,27 @@ import FirebaseAuth
 
 
 enum AuthError: String, Error {
-    case invalidPassword = "Wrong password entered"
-    case emailBadlyFormatted = "Login not in email format"
-    case userNotRegistered = "User not registered. Pls sign up"
-    case otherError = "Other error. Pls relogin"
+    case invalidPassword = "authInvalidPassword"
+    case emailBadlyFormatted = "emailBadlyFormatted"
+    case userNotRegistered = "authUserNotRegistered"
+    case otherError = "authOtherError"
+    
+    var localizedAuthError: String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    }
+    
 }
 
 enum SignUpError: String, Error {
-    case signUpEmailBadlyFormatted = "Login not in email format"
-    case signUpUserAlreadyExists = "User already exists"
-    case otherSignUpError = "Other error. Pls try again later"
-    case passwordLengthIncorrect = "Password must be 6 characters long or more"
+    case signUpEmailBadlyFormatted = "signUpEmailBadlyFormatted"
+    case signUpUserAlreadyExists = "signUpUserAlreadyExists"
+    case otherSignUpError = "otherSignUpError"
+    case passwordLengthIncorrect = "passwordLengthIncorrect"
+    
+    var localizedSignUpError: String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    }
 }
-
 
 final class AuthManager {
     

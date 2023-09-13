@@ -1,0 +1,68 @@
+"authInvalidPassword" = "Falsches Passwort eingegeben";
+"emailBadlyFormatted" = "Anmeldung nicht im E-Mail-Format";
+"authUserNotRegistered" = "Benutzer nicht registriert. Bitte anmelden";
+"authOtherError" = "Anderer Fehler. Bitte erneut anmelden";
+"signUpEmailBadlyFormatted" = "Anmeldung nicht im E-Mail-Format";
+"signUpUserAlreadyExists" = "Benutzer existiert bereits";
+"otherSignUpError" = "Anderer Fehler. Bitte später erneut versuchen";
+"passwordLengthIncorrect" = "Passwort muss 6 Zeichen oder mehr lang sein";
+"statusButtonTitle" = "Status zeigen";
+"statusTextFieldPlaceholder" = "Dein Status...";
+"photosLabel" = "Fotos";
+"standardMapType" = "Standard";
+"satelliteMapType" = "Satellit";
+"loginTextFieldPlaceholder" = "Email";
+"passwordTextFieldPlaceholder" = "Passwort";
+"signUpLabel" = "Anmelden";
+"loginButtonTitle" = "Einmelden";
+"errorAlertTitle" = "Fehler";
+"errorAlertAction" = "Noch einmal";
+"tab1Title" = "Lieblingsbeiträge";
+"tab2Title" = "Favoriten";
+"ProfileVCTitle" = "Profil";
+"LogOutButtonTitle" = "Ausmelden";
+"LocationButtonTitle" = "Mein Standort";
+"favoritePostsVCTitle" = "Lieblingsbeiträge";
+"confirmPasswordSignUpPlaceholder" = "Bestätige das Passwort";
+"yourNameSignUpPlaceholder" = "Ihr Name";
+"yourStatusSignUpPlaceholder" = "Dein Status";
+"signUpLabelText" = "Bitte gib dein E-Mail und Passwort ein, um sich anzumelden. Bestätige dein Passwort, indem du es noch einmal eingebst.";
+"profileLabelText" = "Bitte erzähl über sich selbst";
+"passwordConfirmationLabelText" = "Die Passwörter müssen übereinstimmen!";
+"successAlertTitle" = "Erfolg";
+"userRegisteredAlertText" = "Benutzer hat sich erfolgreich registriert!";
+"okAlertButtonTitle" = "Ok";
+"locationServicesAlertText" = "Ortungsdienste nicht aktiviert oder eingeschränkt!";
+"addAnnotationAlertText" = "Anmerkung hinzufügen";
+"enterPOIAlertText" = "Gib dein POI-Namen ein";
+"addAlertAction" = "Hinzufügen";
+"cancelAlertButtonText" = "Abbrechen";
+"distanceOverlayText" = "Distanz";
+"kmLabel" = "km";
+"uploadPhotoButtonLabel" = "Foto hochladen";
+"likesLabel" = "Gefällt mir";
+"viewsLabel" = "Aufrufe";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

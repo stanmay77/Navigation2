@@ -20,8 +20,8 @@ class LoginVC: UIViewController {
         return image
     }()
     
-    lazy var loginField = CustomField(frame: .zero, passwordField: false, placeholderText: "Login", inputText: "stan@google.com")
-    lazy var passwordField = CustomField(frame: .zero, passwordField: true, placeholderText: "Password", inputText: "111111")
+    lazy var loginField = CustomField(frame: .zero, passwordField: false, placeholderText: NSLocalizedString("loginTextFieldPlaceholder", comment: ""), inputText: "stan@google.com")
+    lazy var passwordField = CustomField(frame: .zero, passwordField: true, placeholderText: NSLocalizedString("passwordTextFieldPlaceholder", comment: ""), inputText: "111111")
     
     lazy var stackView: UIStackView = {
         let stack = UIStackView(frame: .zero)
@@ -41,7 +41,7 @@ class LoginVC: UIViewController {
     lazy var signUpLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Sign Up"
+        label.text = NSLocalizedString("signUpLabel", comment: "")
         label.textColor = UIColor.link
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapSignUpLabel))
         label.addGestureRecognizer(tapGesture)
@@ -49,12 +49,11 @@ class LoginVC: UIViewController {
         return label
     }()
     
-    lazy var loginButton = CustomButton(frame: .zero, buttonText: "Log in", titleColor: .white) {
+    lazy var loginButton = CustomButton(frame: .zero, buttonText: NSLocalizedString("loginButtonTitle", comment: ""), titleColor: .white) {
         var email = self.loginField.text ?? ""
         var password = self.passwordField.text ?? ""
         
         self.viewModel.updateState(input: .userCredentialsInput((email, password)))
-        
         self.viewModel.onStateChanged = { [self] state in
             
             switch state {
@@ -65,8 +64,8 @@ class LoginVC: UIViewController {
                 
             case .notlogged(let error):
                 if error != nil {
-                    let alertVC = UIAlertController(title: "Error", message: error!.rawValue, preferredStyle: .alert)
-                    let action = UIAlertAction(title: "Try again", style: .cancel)
+                    let alertVC = UIAlertController(title: NSLocalizedString("errorAlertTitle", comment: ""), message: error!.localizedAuthError, preferredStyle: .alert)
+                    let action = UIAlertAction(title: NSLocalizedString("errorAlertAction", comment: ""), style: .cancel)
                     alertVC.addAction(action)
                     present(alertVC, animated: true)
                 }

@@ -5,19 +5,19 @@ import Foundation
 class SignUpVC: UIViewController {
     
     private var avatarURL: URL? = nil
-    lazy var logInSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: "Email", inputText: nil)
+    lazy var logInSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: NSLocalizedString("loginTextFieldPlaceholder", comment:""), inputText: nil)
     
-    lazy var passwordSignUpField = CustomField(frame: .zero, passwordField: true, placeholderText: "Password", inputText: nil)
+    lazy var passwordSignUpField = CustomField(frame: .zero, passwordField: true, placeholderText: NSLocalizedString("passwordTextFieldPlaceholder", comment:""), inputText: nil)
     
-    lazy var confirmPasswordField = CustomField(frame: .zero, passwordField: true, placeholderText: "Confirm password", inputText: nil)
+    lazy var confirmPasswordField = CustomField(frame: .zero, passwordField: true, placeholderText: NSLocalizedString("confirmPasswordSignUpPlaceholder", comment:""), inputText: nil)
     
-    lazy var nameSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: "Your name", inputText: nil)
+    lazy var nameSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: NSLocalizedString("yourNameSignUpPlaceholder", comment:""), inputText: nil)
     
-    lazy var statusSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: "Your status", inputText: nil)
+    lazy var statusSignUpField = CustomField(frame: .zero, passwordField: false, placeholderText: NSLocalizedString("yourStatusSignUpPlaceholder", comment:""), inputText: nil)
     
     lazy var signUpLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "Please enter your email, password to sign up in the service. Confirm password by entering it once more."
+        label.text = NSLocalizedString("signUpLabelText", comment:"")
         label.font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +36,7 @@ class SignUpVC: UIViewController {
     
     lazy var profileLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "Please tell us about yourself"
+        label.text = NSLocalizedString("profileLabelText", comment:"")
         label.font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -48,7 +48,7 @@ class SignUpVC: UIViewController {
     
     lazy var passwordConfirmationLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "Passwords must match!"
+        label.text = NSLocalizedString("passwordConfirmationLabelText", comment:"")
         label.font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
         label.textColor = .red
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -108,7 +108,7 @@ class SignUpVC: UIViewController {
     lazy var separatorView1 = Divider()
     lazy var separatorView2 = Divider()
     
-    lazy var signUpButton = CustomButton(frame: .zero, buttonText: "Sign Up", titleColor: .white) {
+    lazy var signUpButton = CustomButton(frame: .zero, buttonText: NSLocalizedString("signUpLabel", comment:""), titleColor: .white) {
         [unowned self] in
         
         AuthManager.shared.signUpUser(with: logInSignUpField.text!, password: passwordSignUpField.text!) { [self] result in
@@ -133,16 +133,16 @@ class SignUpVC: UIViewController {
                 }
                 
                 
-                let alertVC = UIAlertController(title: "Success", message: "User registered successfully!", preferredStyle: .alert)
-                let alertAction = UIAlertAction(title: "Ok", style: .default) { _ in
+                let alertVC = UIAlertController(title: NSLocalizedString("successAlertTitle", comment: ""), message: NSLocalizedString("userRegisteredAlertText", comment: ""), preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: NSLocalizedString("okAlertButtonTitle", comment: ""), style: .default) { _ in
                     navigationController?.popViewController(animated: true)
                 }
                 alertVC.addAction(alertAction)
                 present(alertVC, animated: true)
             
             case .failure(let error):
-                let alertVC = UIAlertController(title: "Error", message: error.rawValue, preferredStyle: .alert)
-                let alertAction = UIAlertAction(title: "Try again", style: .default)
+                let alertVC = UIAlertController(title: NSLocalizedString("errorAlertTitle", comment: ""), message: error.localizedSignUpError, preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: NSLocalizedString("errorAlertAction", comment: ""), style: .default)
                 alertVC.addAction(alertAction)
                 present(alertVC, animated: true)
             }
@@ -150,7 +150,7 @@ class SignUpVC: UIViewController {
         
     }
     
-    lazy var uploadPhotoButton = CustomButton(frame: .zero, buttonText: "Upload your photo", titleColor: .white) {
+    lazy var uploadPhotoButton = CustomButton(frame: .zero, buttonText: NSLocalizedString("uploadPhotoButtonLabel", comment: ""), titleColor: .white) {
         [unowned self] in
         
         let imageMediaType = kUTTypeImage as String

@@ -64,7 +64,7 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
     private func configureUI() {
         view.backgroundColor = .systemBackground
         navigationItem.backBarButtonItem?.tintColor = .white
-        navigationItem.title = "Your location"
+        navigationItem.title = NSLocalizedString("LocationButtonTitle", comment: "")
         view.addSubview(mapView)
         view.addSubview(mapTypeOverlayView)
         mapTypeOverlayView.addSubview(mapTypeLabel)
@@ -137,8 +137,8 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
             locationManager.requestWhenInUseAuthorization()
             setLocationManager()
         case .denied, .restricted:
-            let alertVC = UIAlertController(title: "Error", message: "Location services not enabled or restricted!", preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "Ok", style: .default)
+            let alertVC = UIAlertController(title: NSLocalizedString("errorAlertTitle", comment: ""), message: NSLocalizedString("locationServicesAlertText", comment: ""), preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: NSLocalizedString("okAlertButtonTitle", comment: ""), style: .default)
             alertVC.addAction(alertAction)
             present(alertVC, animated: true)
             
@@ -159,23 +159,23 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
         let location = recognizer.location(in: mapView)
         let coord = mapView.convert(location, toCoordinateFrom: mapView)
         print(coord)
-        let alertVC = UIAlertController(title: "Add annotation", message: "Enter your POI name", preferredStyle: .alert)
+        let alertVC = UIAlertController(title: NSLocalizedString("addAnnotationAlertText", comment: ""), message: NSLocalizedString("enterPOIAlertText", comment: ""), preferredStyle: .alert)
         
         alertVC.addTextField { textField in
-            textField.text = "Enter POI name"
+            textField.text = NSLocalizedString("enterPOIAlertText", comment: "")
         }
         
         
-        let action = UIAlertAction(title: "Add", style: .default) {_ in
+        let action = UIAlertAction(title: NSLocalizedString("addAlertAction", comment: ""), style: .default) {_ in
 
             let annotation = MKPointAnnotation()
             annotation.coordinate = coord
-            annotation.title = alertVC.textFields?[0].text ?? "No label"
+            annotation.title = alertVC.textFields?[0].text ?? ""
             self.mapView.addAnnotation(annotation)
         }
         
         alertVC.addAction(action)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("cancelAlertButtonText", comment: ""), style: .cancel, handler: nil)
         alertVC.addAction(cancelAction)
         present(alertVC, animated: true)
         
@@ -237,7 +237,7 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
             if let rr = response?.routes.first {
                 self.mapView.addOverlay(rr.polyline, level: .aboveRoads)
                 self.routeInfoOverlayView.isHidden = false
-                self.distanceLabel.text = "🎯 Distance: \(String(format: "%.1f", rr.distance/1000)) km"
+                self.distanceLabel.text = "🎯 \(NSLocalizedString("distanceOverlayText", comment: "")): \(String(format: "%.1f", rr.distance/1000)) \(NSLocalizedString("kmLabel", comment: ""))"
             }
             
         }

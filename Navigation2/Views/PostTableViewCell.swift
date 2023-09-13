@@ -98,8 +98,8 @@ final class PostTableViewCell: UITableViewCell {
         guard let postImage = UIImage(named: post.image) else { return }
         postImageView.image = postImage
         postTextLabel.text = post.descr
-        likesLabel.text = "👍 Likes: \(post.likes)"
-        viewsLabel.text = "👀 Views: \(post.views)"
+        likesLabel.text = "👍 \(NSLocalizedString("likesLabel", comment: "")): \(post.likes)"
+        viewsLabel.text = "👀 \(NSLocalizedString("viewsLabel", comment: "")): \(post.views)"
     }
     
 }

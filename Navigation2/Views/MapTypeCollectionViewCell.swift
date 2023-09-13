@@ -54,10 +54,10 @@ class MapTypeCollectionViewCell: UICollectionViewCell {
         switch mapType {
         case .standard:
             mapTypeImageView.image = UIImage(named: "standard")
-            mapTypeLabel.text = "Standard"
+            mapTypeLabel.text = NSLocalizedString("standardMapType", comment: "")
         case .satellite:
             mapTypeImageView.image = UIImage(named: "satellite")
-            mapTypeLabel.text = "Satellite"
+            mapTypeLabel.text = NSLocalizedString("satelliteMapType", comment: "")
         default:
             mapTypeImageView.image = UIImage(named: "standard")
             mapTypeLabel.text = ""

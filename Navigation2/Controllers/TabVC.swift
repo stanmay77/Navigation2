@@ -57,9 +57,9 @@ class TabVC: UITabBarController {
 //        let tabVC2 = FavVC()
         
         
-        tabVC1.tabBarItem = UITabBarItem(title: "My profile", image: UIImage(systemName: "person.circle"), tag: 1)
+        tabVC1.tabBarItem = UITabBarItem(title: NSLocalizedString("tab1Title", comment: ""), image: UIImage(systemName: "person.circle"), tag: 1)
         
-        tabVC2.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star.circle"), tag: 1)
+        tabVC2.tabBarItem = UITabBarItem(title: NSLocalizedString("tab2Title", comment: ""), image: UIImage(systemName: "star.circle"), tag: 1)
         
         self.setViewControllers([tabVC1, tabVC2], animated: true)
     }

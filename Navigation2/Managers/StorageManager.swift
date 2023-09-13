@@ -17,7 +17,6 @@ final class StorageManager {
           let collectionRef = db.collection("Users")
           do {
               let newUserReference = try collectionRef.addDocument(from: user)
-              print("User stored with new document reference: \(newUserReference)")
           }
           catch {
               print(error.localizedDescription)

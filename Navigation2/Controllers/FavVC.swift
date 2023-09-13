@@ -35,8 +35,8 @@ class FavVC: UIViewController {
     
     func configureUI() {
         view.backgroundColor = .systemBackground
-        title = "Favorite posts"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logOut))
+        navigationItem.title = NSLocalizedString("favoritePostsVCTitle", comment: "")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("LogOutButtonTitle", comment: ""), style: .plain, target: self, action: #selector(logOut))
         navigationItem.rightBarButtonItem?.tintColor = .white
         
         favPostsTable.delegate = self
