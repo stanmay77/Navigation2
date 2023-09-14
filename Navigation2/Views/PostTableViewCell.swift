@@ -5,7 +5,7 @@ final class PostTableViewCell: UITableViewCell {
     lazy var postHeaderLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -31,7 +31,7 @@ final class PostTableViewCell: UITableViewCell {
     let likesLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -39,7 +39,7 @@ final class PostTableViewCell: UITableViewCell {
     let viewsLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

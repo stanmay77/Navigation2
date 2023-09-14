@@ -42,7 +42,8 @@ class TabVC: UITabBarController {
         navigationBarAppearance.setBackIndicatorImage(image, transitionMaskImage: image)
     
         navigationBarAppearance.shadowColor = nil
-        navigationBarAppearance.backgroundColor = UIColor(named: "AccentColor")
+        //navigationBarAppearance.backgroundColor = UIColor(named: "AccentColor")
+        navigationBarAppearance.backgroundColor = UIColor.navBarColor
         UINavigationBar.appearance().barStyle = .default
         UINavigationBar.appearance().standardAppearance = navigationBarAppearance
         UINavigationBar.appearance().compactAppearance = navigationBarAppearance
@@ -56,6 +57,8 @@ class TabVC: UITabBarController {
 //        let tabVC1 = ProfileVC()
 //        let tabVC2 = FavVC()
         
+        
+        tabBar.tintColor = UIColor.tabBarColor
         
         tabVC1.tabBarItem = UITabBarItem(title: NSLocalizedString("tab1Title", comment: ""), image: UIImage(systemName: "person.circle"), tag: 1)
         

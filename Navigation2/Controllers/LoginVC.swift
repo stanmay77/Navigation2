@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
         stack.layer.borderWidth = 0.5
         stack.layer.borderColor = UIColor.lightGray.cgColor
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.backgroundColor = UIColor.systemGray6
+        stack.backgroundColor = UIColor.fieldColor1
         return stack
     }()
     
@@ -206,8 +206,6 @@ class LoginVC: UIViewController {
                 present(vc, animated: true)
     }
 }
-
-
 
 extension LoginVC: UITextFieldDelegate {
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {

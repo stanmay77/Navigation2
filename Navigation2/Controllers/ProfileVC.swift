@@ -30,6 +30,7 @@ class ProfileVC: UIViewController {
         table.register(PostTableViewCell.self, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
         table.register(PhotosTableViewCell.self, forCellReuseIdentifier: PhotosTableViewCell.reuseIdentifier)
         table.translatesAutoresizingMaskIntoConstraints = false
+        //table.backgroundColor = UIColor.themeColors.postColor
         table.estimatedRowHeight = 850
         table.rowHeight = UITableView.automaticDimension
         return table
@@ -55,7 +56,7 @@ class ProfileVC: UIViewController {
     
 
     func configureUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = UIColor.postColor
         navigationItem.title = NSLocalizedString("ProfileVCTitle", comment: "")
         navigationItem.titleView?.tintColor = .white
         
@@ -104,6 +105,12 @@ class ProfileVC: UIViewController {
         }
         
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        profileVC?.avatarImageView.layer.borderColor = UIColor.antiMonochrome.cgColor
+        
+    }
+    
 }
 
 

@@ -5,15 +5,10 @@ final class PhotosTableViewCell: UITableViewCell {
     
     static let reuseIdentifier = "photosCell"
     
-//    enum Constants: CGFloat {
-//        case sideOffset = 12.0
-//        case collectionInterimSpacing = 8.0
-//    }
-    
     lazy var photosLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.text = NSLocalizedString("photosLabel", comment: "")
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -21,7 +16,7 @@ final class PhotosTableViewCell: UITableViewCell {
     
     lazy var nextPhotosArrowImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(systemName: "arrow.right")?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        imageView.image = UIImage(systemName: "arrow.right")?.withTintColor(UIColor.monochrome, renderingMode: .alwaysOriginal)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -57,7 +52,7 @@ final class PhotosTableViewCell: UITableViewCell {
         addSubview(photosCollection)
         addSubview(nextPhotosArrowImage)
         
-        backgroundColor = .white
+        backgroundColor = UIColor.postColor
         
         NSLayoutConstraint.activate([
             

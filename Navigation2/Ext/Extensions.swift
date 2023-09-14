@@ -41,3 +41,25 @@ extension Post {
         return cdPost
     }
 }
+
+extension UIColor {
+    static func createColor(light: UIColor, dark: UIColor) -> UIColor {
+        guard #available(iOS 13.0, *) else {
+            return light
+        }
+        
+        return UIColor { (traitCollection) -> UIColor in
+            return traitCollection.userInterfaceStyle == .light ? light : dark
+        }
+    }
+    
+    
+    static let fieldColor1 = createColor(light: UIColor.systemGray6, dark: .white)
+    static let postColor = createColor(light: .white, dark: .systemGray6)
+    static let monochrome = createColor(light: .black, dark: .white)
+    static let antiMonochrome = createColor(light: .white, dark: .black)
+    static let fieldColor2 = createColor(light: .systemGray4, dark: .systemGray)
+    static let navBarColor = createColor(light: UIColor(named: "AccentColor")!, dark: .systemGray4)
+    static let tabBarColor = createColor(light: UIColor(named: "AccentColor")!, dark: .white)
+    
+}

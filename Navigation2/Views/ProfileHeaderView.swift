@@ -22,10 +22,11 @@ final class ProfileHeaderView: UIView {
     let fullNameLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 18.0, weight: .bold)
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     
     lazy var avatarImageView: UIImageView = {
         let imageView = UIImageView()
@@ -33,20 +34,16 @@ final class ProfileHeaderView: UIView {
         imageView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.borderColor = UIColor.antiMonochrome.cgColor
         imageView.layer.borderWidth = 3
         imageView.clipsToBounds = true
-        imageView.isUserInteractionEnabled = true
-        
-        let tapAvatar = UITapGestureRecognizer(target: self, action: #selector(tapImage))
-        imageView.addGestureRecognizer(tapAvatar)
         return imageView
     }()
     
     let statusLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
-        label.textColor = .gray
+        label.textColor = UIColor.monochrome
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -62,7 +59,8 @@ final class ProfileHeaderView: UIView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.backgroundColor = .white
         textField.addSpacer(for: 10)
-        textField.placeholder = NSLocalizedString("statusTextFieldPlaceholder", comment: "")
+        
+        textField.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("statusTextFieldPlaceholder", comment: ""), attributes: [NSAttributedString.Key.foregroundColor: UIColor.fieldColor2])
         return textField
     }()
     

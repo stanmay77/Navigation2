@@ -17,7 +17,7 @@ class CustomField: UITextField {
         self.font = UIFont.systemFont(ofSize: 16)
         self.layer.cornerRadius = 10
         self.autocapitalizationType = .none
-        self.backgroundColor = UIColor.systemGray6
+        self.backgroundColor = UIColor.fieldColor1
         self.tintColor = UIColor(named: "AccentColor")
         self.keyboardType = UIKeyboardType.default
         self.returnKeyType = UIReturnKeyType.done

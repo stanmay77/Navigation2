@@ -33,7 +33,7 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
     
     lazy var distanceLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.textColor = .black
+        label.textColor = UIColor.monochrome
         label.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -42,7 +42,6 @@ class LocationVC: UIViewController, MapTypeOptionDelegateProtocol {
     
     lazy var routeInfoOverlayView: UIView = {
         let view = UIView(frame: .zero)
-        //view.backgroundColor = .secondarySystemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 8
         view.layer.borderWidth = 2
