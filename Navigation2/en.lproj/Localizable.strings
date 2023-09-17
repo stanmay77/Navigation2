@@ -42,7 +42,11 @@
 "uploadPhotoButtonLabel" = "Upload your photo";
 "likesLabel" = "Likes";
 "viewsLabel" = "Views";
-
+"setNotificationVCTitle" = "Set Notification";
+"notificationsVCTitle" = "Your notifications";
+"notificationBodyField" = "Notification text";
+"notificationTitleField" = "Notification title";
+"notificationAuthorizationAlert" = "Please allow notifications for our app";
 
 
 

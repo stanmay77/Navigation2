@@ -31,7 +31,6 @@ class TabVC: UITabBarController {
     func configureUI() {
         view.backgroundColor = .systemBackground
         
-        
        // UITabBar.appearance().backgroundColor = UIColor(red: 53.0, green: 144.0, blue: 243.0, alpha: 0.6)
         
         let navigationBarAppearance = UINavigationBarAppearance()

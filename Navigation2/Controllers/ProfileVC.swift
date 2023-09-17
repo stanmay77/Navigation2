@@ -60,8 +60,14 @@ class ProfileVC: UIViewController {
         navigationItem.title = NSLocalizedString("ProfileVCTitle", comment: "")
         navigationItem.titleView?.tintColor = .white
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("LogOutButtonTitle", comment: ""), style: .plain, target: self, action: #selector(tapLogOut))
-        navigationItem.rightBarButtonItem?.tintColor = .white
+        
+        let logOutNavItem = UIBarButtonItem(title: NSLocalizedString("LogOutButtonTitle", comment: ""), style: .plain, target: self, action: #selector(tapLogOut))
+        logOutNavItem.tintColor = .white
+        
+        let notificationNavItem = UIBarButtonItem(image: UIImage(systemName: "bell.circle"), style: .plain, target: self, action: #selector(tapNotification))
+        notificationNavItem.tintColor = .white
+        
+        navigationItem.rightBarButtonItems = [logOutNavItem, notificationNavItem]
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("LocationButtonTitle", comment: ""), style: .plain, target: self, action: #selector(tapLocation))
         navigationItem.leftBarButtonItem?.tintColor = .white
@@ -106,10 +112,15 @@ class ProfileVC: UIViewController {
         
     }
     
+    @objc func tapNotification() {
+        navigationController?.pushViewController(NotificationsVC(), animated: true)
+    }
+    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         profileVC?.avatarImageView.layer.borderColor = UIColor.antiMonochrome.cgColor
         
     }
+  
     
 }
 

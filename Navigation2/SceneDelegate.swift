@@ -27,7 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         self.window = window
         window.makeKeyAndVisible()
-
+        
+        LocalNotificationsService.shared.requestAuth()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

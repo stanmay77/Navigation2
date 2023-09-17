@@ -27,7 +27,7 @@ class MapTypeViewController: UIViewController {
         configureUI()
     }
     
-
+    
     func configureUI() {
         view.backgroundColor = .systemBackground
         view.addSubview(mapTypeCollectionView)

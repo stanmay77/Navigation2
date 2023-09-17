@@ -42,3 +42,8 @@
 "uploadPhotoButtonLabel" = "Загрузить фото";
 "likesLabel" = "Нравится";
 "viewsLabel" = "Просмотров";
+"setNotificationVCTitle" = "Установить напоминание";
+"notificationsVCTitle" = "Все напоминания";
+"notificationBodyField" = "Текст напоминания";
+"notificationTitleField" = "Заголовок напоминания";
+"notificationAuthorizationAlert" = "Пожалуйста, активируй уведомления для нашего аппа!";

@@ -1,1 +1,2 @@
 "NSLocationWhenInUseUsageDescription" = "Разрешите использовать геолокацию";
+"NSUserNotificationsUsageDescription" = "Разрешите отправлять уведомления";

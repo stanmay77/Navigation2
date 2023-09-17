@@ -42,10 +42,11 @@
 "uploadPhotoButtonLabel" = "Foto hochladen";
 "likesLabel" = "Gefällt mir";
 "viewsLabel" = "Aufrufe";
-
-
-
-
+"setNotificationVCTitle" = "Benachrichtigung einstellen";
+"notificationsVCTitle" = "Deine Benachrichtigungen";
+"notificationBodyField" = "Benachrichtigungstext";
+"notificationTitleField" = "Benachrichtigungstitel";
+"notificationAuthorizationAlert" = "Bitte aktivierst Benachrichtigungen für unsere App";
 
 
 

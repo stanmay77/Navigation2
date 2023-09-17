@@ -1,1 +1,3 @@
 "NSLocationWhenInUseUsageDescription" = "Bitte erlauben Sie die Standortverfolgung";
+"NSUserNotificationsUsageDescription" = "Bitte erlauben Sie die ";
+"NSUserNotificationsUsageDescription" = "Bitte aktivieren Sie Benachrichtigungen für die App";

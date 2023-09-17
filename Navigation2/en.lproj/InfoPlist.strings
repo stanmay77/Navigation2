@@ -1,1 +1,2 @@
 "NSLocationWhenInUseUsageDescription" = "Please allow location tracking";
+"NSUserNotificationsUsageDescription" = "Please allow notifications for the app";
