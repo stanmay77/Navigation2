@@ -26,6 +26,7 @@
 		33668B6D2A8E68BD00CE2A2A /* Navigation2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33668B6B2A8E68BD00CE2A2A /* Navigation2.xcdatamodeld */; };
 		33668B6F2A8E68BF00CE2A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33668B6E2A8E68BF00CE2A2A /* Assets.xcassets */; };
 		33668B722A8E68BF00CE2A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33668B702A8E68BF00CE2A2A /* LaunchScreen.storyboard */; };
+		337E67862ABA2219004EA31C /* LoginBiometryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E67852ABA2219004EA31C /* LoginBiometryVC.swift */; };
 		338976922AB1D9EE0094D1F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 338976942AB1D9EE0094D1F7 /* Localizable.strings */; };
 		3395E8F32A9F5ECF00938F6B /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3395E8F22A9F5ECF00938F6B /* TabVC.swift */; };
 		3395E8F52A9F5F0500938F6B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3395E8F42A9F5F0500938F6B /* ProfileVC.swift */; };
@@ -42,6 +43,7 @@
 		3399A84E2A978915004CA9CD /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399A84D2A978915004CA9CD /* SignUpVC.swift */; };
 		3399A8502A9791BD004CA9CD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399A84F2A9791BD004CA9CD /* StorageManager.swift */; };
 		3399A8532A9791E6004CA9CD /* RegisteredUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399A8522A9791E6004CA9CD /* RegisteredUser.swift */; };
+		33C6458B2AB713240036AC33 /* LocalAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6458A2AB713240036AC33 /* LocalAuthorizationService.swift */; };
 		33C844392AA303C300760167 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C844382AA303C300760167 /* LocationVC.swift */; };
 		33DD83BF2A935F1500F367B9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 33DD83BE2A935F1500F367B9 /* FirebaseAuth */; };
 		33DD83C12A935F1500F367B9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 33DD83C02A935F1500F367B9 /* FirebaseCrashlytics */; };
@@ -77,6 +79,7 @@
 		33668B6C2A8E68BD00CE2A2A /* Navigation2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navigation2.xcdatamodel; sourceTree = "<group>"; };
 		33668B6E2A8E68BF00CE2A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33668B732A8E68C000CE2A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337E67852ABA2219004EA31C /* LoginBiometryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBiometryVC.swift; sourceTree = "<group>"; };
 		338976932AB1D9EE0094D1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		338976952AB1D9F10094D1F7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3395E8F22A9F5ECF00938F6B /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		3399A84D2A978915004CA9CD /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3399A84F2A9791BD004CA9CD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		3399A8522A9791E6004CA9CD /* RegisteredUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredUser.swift; sourceTree = "<group>"; };
+		33C6458A2AB713240036AC33 /* LocalAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthorizationService.swift; sourceTree = "<group>"; };
 		33C844382AA303C300760167 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		33FC38772A936D7E00E99E95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33FC38792A936E5300E99E95 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				334BF1792A8E69DD003C5E65 /* LoginVC.swift */,
+				337E67852ABA2219004EA31C /* LoginBiometryVC.swift */,
 				33FC38792A936E5300E99E95 /* LoginViewModel.swift */,
 				330ED9652AA62DE900E5AF1A /* MapTypeViewController.swift */,
 				3395E8F22A9F5ECF00938F6B /* TabVC.swift */,
@@ -218,6 +223,7 @@
 				330973F22A9FB0C9000C1939 /* CoreDManager.swift */,
 				3399A84F2A9791BD004CA9CD /* StorageManager.swift */,
 				332803592A9F5AD600A746B1 /* CloudStorageManager.swift */,
+				33C6458A2AB713240036AC33 /* LocalAuthorizationService.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -333,8 +339,10 @@
 				33668B6D2A8E68BD00CE2A2A /* Navigation2.xcdatamodeld in Sources */,
 				334BF17A2A8E69DD003C5E65 /* LoginVC.swift in Sources */,
 				330AE9C82AB364BD00CB36F7 /* NotificationTableViewCell.swift in Sources */,
+				337E67862ABA2219004EA31C /* LoginBiometryVC.swift in Sources */,
 				3395E8F92A9F76AE00938F6B /* ProfileHeaderView.swift in Sources */,
 				33C844392AA303C300760167 /* LocationVC.swift in Sources */,
+				33C6458B2AB713240036AC33 /* LocalAuthorizationService.swift in Sources */,
 				330ED9662AA62DE900E5AF1A /* MapTypeViewController.swift in Sources */,
 				3395E9042A9F77FA00938F6B /* PhotosTableViewCell.swift in Sources */,
 				3395E9022A9F77B700938F6B /* Constants.swift in Sources */,
@@ -510,6 +518,7 @@
 				DEVELOPMENT_TEAM = DMR9X2FT85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Pls enable FaceID for authorization";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location tracking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -542,6 +551,7 @@
 				DEVELOPMENT_TEAM = DMR9X2FT85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Pls enable FaceID for authorization";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location tracking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

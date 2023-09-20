@@ -17,9 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         if let userLogged = AuthManager.shared.userLogged {
-            print(userLogged)
-            StorageManager.shared.getUser(by: userLogged) { regUser in
-                window.rootViewController = TabVC(userLogged: regUser)
+            if LocalAuthorizationService.shared.canUseBiometry {
+                StorageManager.shared.getUser(by: userLogged) { regUser in
+                    window.rootViewController = LoginBiometryVC(userLogged: regUser)
+                    }
+            }
+            else {
+                StorageManager.shared.getUser(by: userLogged) { regUser in
+                    window.rootViewController = TabVC(userLogged: regUser)
+                    }
             }
         } else {
             let logViewModel = LogModel()

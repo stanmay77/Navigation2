@@ -73,6 +73,7 @@ class LoginVC: UIViewController {
         }
     }
     
+    
     lazy var scrollVew: UIScrollView = {
         let scroll = UIScrollView(frame: .zero)
         scroll.isScrollEnabled = true
@@ -128,7 +129,6 @@ class LoginVC: UIViewController {
             scrollContentView.leadingAnchor.constraint(equalTo: scrollVew.leadingAnchor),
             scrollContentView.trailingAnchor.constraint(equalTo: scrollVew.trailingAnchor),
             scrollContentView.widthAnchor.constraint(equalTo: scrollVew.widthAnchor),
-            // Removed height constraint for content view
             scrollContentView.bottomAnchor.constraint(equalTo: scrollVew.bottomAnchor),
             
             logoImageView.topAnchor.constraint(equalTo: scrollContentView.topAnchor, constant: 120),
@@ -156,8 +156,7 @@ class LoginVC: UIViewController {
             signUpLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 5),
             signUpLabel.centerXAnchor.constraint(equalTo: loginButton.centerXAnchor),
             signUpLabel.heightAnchor.constraint(equalToConstant: 30),
-            
-            // Add this bottom constraint for content view
+        
             signUpLabel.bottomAnchor.constraint(equalTo: scrollContentView.bottomAnchor, constant: -20)
         ])
     }
@@ -205,6 +204,7 @@ class LoginVC: UIViewController {
                 vc.modalPresentationStyle = .formSheet
                 present(vc, animated: true)
     }
+    
 }
 
 extension LoginVC: UITextFieldDelegate {

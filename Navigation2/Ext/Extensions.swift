@@ -61,5 +61,5 @@ extension UIColor {
     static let fieldColor2 = createColor(light: .systemGray4, dark: .systemGray)
     static let navBarColor = createColor(light: UIColor(named: "AccentColor")!, dark: .systemGray4)
     static let tabBarColor = createColor(light: UIColor(named: "AccentColor")!, dark: .white)
-    
+    static let faceIdColor = createColor(light: UIColor(named: "AccentColor")!, dark: .white)
 }

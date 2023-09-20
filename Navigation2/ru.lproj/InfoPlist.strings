@@ -1,2 +1,3 @@
 "NSLocationWhenInUseUsageDescription" = "Разрешите использовать геолокацию";
 "NSUserNotificationsUsageDescription" = "Разрешите отправлять уведомления";
+"NSFaceIDUsageDescription" = "Разрешите использовать Face ID для входа в приложение";
